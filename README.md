@@ -1,18 +1,25 @@
+# Lógica do Algoritmo para Verificação de Semelhança de Triângulos
 
+Este programa foi desenvolvido para verificar a semelhança entre triângulos utilizando três critérios distintos: Lado-Ângulo-Lado (LAL), Ângulo-Ângulo (AA) e Lado-Lado-Lado (LLL). Abaixo está a explicação detalhada da lógica utilizada no algoritmo.
 
-Passo a Passo da Lógica do Algoritmo:
+## 1. Entrada de Dados
 
-Entrada de Dados:
+- O programa solicita ao usuário que escolha um critério de semelhança entre os triângulos:
+    - **LAL** (Lado-Ângulo-Lado)
+    - **AA** (Ângulo-Ângulo)
+    - **LLL** (Lado-Lado-Lado)
+- Dependendo da escolha do critério, o programa pede ao usuário que insira os valores dos lados e/ou ângulos dos dois triângulos.
 
-O programa solicita ao usuário que escolha um critério de semelhança entre os triângulos (LAL, AA, LLL).
-Dependendo da escolha, o programa pede para o usuário inserir os valores dos lados e/ou ângulos dos dois triângulos.
-Verificação da Semelhança:
+## 2. Verificação da Semelhança
 
-O programa utiliza funções específicas para verificar a semelhança de acordo com o critério escolhido.
-Cada função (verifica_lal, verifica_aa, verifica_lll) recebe os dados dos triângulos e realiza cálculos ou comparações.
-LAL: Compara os dois lados proporcionais e o ângulo entre eles.
-AA: Compara os dois ângulos de cada triângulo.
-LLL: Compara todos os lados para verificar se estão em proporção.
-Retorno do Resultado:
+- O programa utiliza funções específicas para verificar a semelhança de acordo com o critério escolhido:
+    - **Função `verifica_lal`:** 
+        - Compara os dois lados proporcionais e o ângulo entre eles.
+    - **Função `verifica_aa`:**
+        - Compara os dois ângulos de cada triângulo.
+    - **Função `verifica_lll`:**
+        - Compara todos os lados para verificar se estão em proporção.
 
-Após realizar as verificações, a função checar_seme retorna uma mensagem indicando se a semelhança foi confirmada ou não, com base nos critérios especificados.
+## 3. Retorno do Resultado
+
+- Após realizar as verificações, a função `checar_seme` retorna uma mensagem indicando se a semelhança foi confirmada ou não, com base nos critérios especificados.
